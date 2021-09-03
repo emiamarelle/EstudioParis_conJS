@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="descriptions" content="Servicios Contables, Laborales e Impositivos. Generación de balances y de planes de pago. Cargas en AFIP.">
+    <meta name="keywords" content="balances, contador, afip, impuestos, deducciones, ganancias">
+    <meta name="author" content="Maria Emilia Amarelle">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>EP-Contacto</title>
+    <link rel="shortcut icon" type="image/jpg" href="../Img/logodeprueba1.jpg"/>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header__encabezado"> <!--Caja para Nombre y logo de la empresa-->
+            <div class="header__encabezado__titulo"> <!--Caja para Nombre y Slogan-->
+                <a href="../index.html" class="header__encabezado__titulo__nombre"><h1 class="header__encabezado__titulo__nombre">Estudio Paris</h1></a>
+                <a href="../index.html" class="header__encabezado__titulo__slogan"><h2 class="header__encabezado__titulo__slogan">Contadores públicos</h2></a>
+            </div>
+            <a href="../index.html"><img src="../Img/logodeprueba1.jpg" class="header__encabezado__logo"></a>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span>Menú</span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Servicios
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="servicios.html">Ver todos</a></li>
+                      <li><a class="dropdown-item" href="servicios.html#contables">Contables</a></li>
+                      <li><a class="dropdown-item" href="servicios.html#impositivos">Impositivos</a></li>
+                      <li><a class="dropdown-item" href="servicios.html#laborales">Laborales</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="trabajos.html">Trabajos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="novedades.html">Novedades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="presupuesto.html">Presupuesto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+    </header>
+
+    <div class="div__presupuesto">
+
+
+    <div>
+      <h2 class="titulosPrincipalesPresupuesto" id="bienvenida">Cotizá tu presupuesto online</h2>
+    </div>
+
+
+    <section class="div__section__presupuesto"> <!--Formulario de carga de información-->
+
+      <div class="div__section__div__presupuesto">
+        <form  id="cotizar" class="form__presupuesto">
+          <div class="form__item__presupuesto">
+            <label for="nombreApellido" name="nombreApellido">1- Por favor, dejanos tu Nombre y Apellido</label>
+            <input type="text" id="nombreApellido">
+          </div>
+
+          <div class="form__item__presupuesto">
+            <label for="email" name="email">2- Un e-mail de contacto</label>
+            <input type="email" id="email" aria-describedby="emailHelp">
+          </div>      
+          
+          <div class="form__item__presupuesto">
+            <label for="tarea">3- Elegí el servicio a cotizar</label>
+            <select name="tarea" id="tarea">
+              <option value="seleccion">Seleccione una opcion</option>	
+              <option value="balance">Balance</option>	
+              <option value="declaracion">Declaración jurada</option>
+              <option value="certificacion">Certificación</option>
+              <option value="ganancias">Presentación de Ganancias</option>
+            </select>
+          </div>
+          <div class="form__item__presupuesto">
+            <label for="duplicado">4- ¿Desea recibirlo por duplicado?</label>
+            <select name="duplicado" id="duplicado">
+              <option value="seleccion">Seleccione una opcion</option>
+              <option value="SI">Si</option>	
+              <option value="NO">No</option>
+            </select>
+          </div>
+          <div class="form__item__presupuesto">
+            <label for="adicional">5- ¿Tendrá algún servicio adional?</label>
+            <select name="adicional" id="adicional">
+              <option value="seleccion">Seleccione una opcion</option>
+              <option value="SI">Si</option>	  
+              <option value="NO">No</option>	
+            </select>
+          </div>
+          <div class="form__item__presupuesto">
+            <label for="descAdicional">6- Describe el servicio adicional (solo completar si se  seleccionó "SI en la respuesta anterior)</label>
+              <textarea name="mensaje" id="" cols="25" rows="10" id="mensaje" class="form__relleno__presupuesto"></textarea>
+            </select>     
+          </div>
+          <div class="form__item__presupuesto">
+            <button type="submit">Cotizar</button>
+          </div>
+        </form>
+
+        <div id="error"></div>
+        <div id="confirmacion"></div>
+      </div>
+    </section>
+
+  </section>
+
+  </div>
+
+    <footer> <!--footer-->
+
+        <div class="footer__div">
+    
+          <div class="footer__div__redes" > <!--Section footer Redes Sociales-->
+            <div class="footer__div__item">
+              <img width="20px" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDE2OS4wNjMgMTY5LjA2MyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8cGF0aCBkPSJNMTIyLjQwNiwwSDQ2LjY1NEMyMC45MjksMCwwLDIwLjkzLDAsNDYuNjU1djc1Ljc1MmMwLDI1LjcyNiwyMC45MjksNDYuNjU1LDQ2LjY1NCw0Ni42NTVoNzUuNzUyICAgYzI1LjcyNywwLDQ2LjY1Ni0yMC45Myw0Ni42NTYtNDYuNjU1VjQ2LjY1NUMxNjkuMDYzLDIwLjkzLDE0OC4xMzMsMCwxMjIuNDA2LDB6IE0xNTQuMDYzLDEyMi40MDcgICBjMCwxNy40NTUtMTQuMjAxLDMxLjY1NS0zMS42NTYsMzEuNjU1SDQ2LjY1NEMyOS4yLDE1NC4wNjMsMTUsMTM5Ljg2MiwxNSwxMjIuNDA3VjQ2LjY1NUMxNSwyOS4yMDEsMjkuMiwxNSw0Ni42NTQsMTVoNzUuNzUyICAgYzE3LjQ1NSwwLDMxLjY1NiwxNC4yMDEsMzEuNjU2LDMxLjY1NVYxMjIuNDA3eiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiI+PC9wYXRoPgoJPHBhdGggZD0iTTg0LjUzMSw0MC45N2MtMjQuMDIxLDAtNDMuNTYzLDE5LjU0Mi00My41NjMsNDMuNTYzYzAsMjQuMDIsMTkuNTQyLDQzLjU2MSw0My41NjMsNDMuNTYxczQzLjU2My0xOS41NDEsNDMuNTYzLTQzLjU2MSAgIEMxMjguMDk0LDYwLjUxMiwxMDguNTUyLDQwLjk3LDg0LjUzMSw0MC45N3ogTTg0LjUzMSwxMTMuMDkzYy0xNS43NDksMC0yOC41NjMtMTIuODEyLTI4LjU2My0yOC41NjEgICBjMC0xNS43NSwxMi44MTMtMjguNTYzLDI4LjU2My0yOC41NjNzMjguNTYzLDEyLjgxMywyOC41NjMsMjguNTYzQzExMy4wOTQsMTAwLjI4MSwxMDAuMjgsMTEzLjA5Myw4NC41MzEsMTEzLjA5M3oiIGZpbGw9IiNmZmZmZmYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiPjwvcGF0aD4KCTxwYXRoIGQ9Ik0xMjkuOTIxLDI4LjI1MWMtMi44OSwwLTUuNzI5LDEuMTctNy43NywzLjIyYy0yLjA1MSwyLjA0LTMuMjMsNC44OC0zLjIzLDcuNzhjMCwyLjg5MSwxLjE4LDUuNzMsMy4yMyw3Ljc4ICAgYzIuMDQsMi4wNCw0Ljg4LDMuMjIsNy43NywzLjIyYzIuOSwwLDUuNzMtMS4xOCw3Ljc4LTMuMjJjMi4wNS0yLjA1LDMuMjItNC44OSwzLjIyLTcuNzhjMC0yLjktMS4xNy01Ljc0LTMuMjItNy43OCAgIEMxMzUuNjYxLDI5LjQyMSwxMzIuODIxLDI4LjI1MSwxMjkuOTIxLDI4LjI1MXoiIGZpbGw9IiNmZmZmZmYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiPjwvcGF0aD4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+" />
+              <p class="footer__div__item__contenido">@estudiopariscp</p>
+            </div>
+            <div class="footer__div__item">  
+              <img width="20px" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTc1IDUxMmgxNjd2LTE4MmgtNjB2LTYwaDYwdi03NWMwLTQxLjM1NTQ2OSAzMy42NDQ1MzEtNzUgNzUtNzVoNzV2NjBoLTYwYy0xNi41NDI5NjkgMC0zMCAxMy40NTcwMzEtMzAgMzB2NjBoODcuMjkyOTY5bC0xMCA2MGgtNzcuMjkyOTY5djE4MmgxMzVjNDEuMzU1NDY5IDAgNzUtMzMuNjQ0NTMxIDc1LTc1di0zNjJjMC00MS4zNTU0NjktMzMuNjQ0NTMxLTc1LTc1LTc1aC0zNjJjLTQxLjM1NTQ2OSAwLTc1IDMzLjY0NDUzMS03NSA3NXYzNjJjMCA0MS4zNTU0NjkgMzMuNjQ0NTMxIDc1IDc1IDc1em0tNDUtNDM3YzAtMjQuODEyNSAyMC4xODc1LTQ1IDQ1LTQ1aDM2MmMyNC44MTI1IDAgNDUgMjAuMTg3NSA0NSA0NXYzNjJjMCAyNC44MTI1LTIwLjE4NzUgNDUtNDUgNDVoLTEwNXYtMTIyaDcyLjcwNzAzMWwyMC0xMjBoLTkyLjcwNzAzMXYtMzBoOTB2LTEyMGgtMTA1Yy01Ny44OTg0MzggMC0xMDUgNDcuMTAxNTYyLTEwNSAxMDV2NDVoLTYwdjEyMGg2MHYxMjJoLTEzN2MtMjQuODEyNSAwLTQ1LTIwLjE4NzUtNDUtNDV6bTAgMCIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiI+PC9wYXRoPjwvZz48L3N2Zz4=" />
+              <p class="footer__div__item__contenido">Estudio Paris</p>
+            </div>
+            <div class="footer__div__item">
+              <img width="20px" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ5NiA0OTYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPGc+CgkJCTxwYXRoIGQ9Ik0zNjUuMDA4LDBIMTMwLjk5MkM1Ny41MzYsMCwwLDU3LjUzNiwwLDEzMC45OTJ2MjM0LjAxNkMwLDQzOC40NjQsNTcuNTM2LDQ5NiwxMzAuOTkyLDQ5NmgyMzQuMDE2ICAgICBDNDM4LjQ2NCw0OTYsNDk2LDQzOC40NjQsNDk2LDM2NS4wMDhWMTMwLjk5MkM0OTYsNTcuNTM2LDQzOC40NDgsMCwzNjUuMDA4LDB6IE00NjQsMzY1LjAwOCAgICAgYzAsNTUuNTItNDMuNDg4LDk4Ljk5Mi05OC45OTIsOTguOTkySDEzMC45OTJDNzUuNDg4LDQ2NCwzMiw0MjAuNTEyLDMyLDM2NS4wMDhWMTMwLjk5MkMzMiw3NS40ODgsNzUuNDg4LDMyLDEzMC45OTIsMzJoMjM0LjAxNiAgICAgQzQyMC41MjgsMzIsNDY0LDc1LjQ4OCw0NjQsMTMwLjk5MlYzNjUuMDA4eiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiI+PC9wYXRoPgoJCQk8cGF0aCBkPSJNNDAzLjk4NCwxMjYuNjRjLTUuMTM2LTMuNzYtMTIuMDE2LTQuMDgtMTcuNTA0LTAuODhjLTUuNDcyLDMuMjE2LTE3LjYsNC44LTI3LjMyOCw2LjA4Yy0yLjAxNiwwLjI3Mi00LDAuNTI4LTUuOTIsMC44ICAgICBjLTEzLjYxNi0xMS4yOTYtMzEuMDA4LTE3LjYzMi00OC45NDQtMTcuNjMyYy00MC40LDAtNzMuNTUyLDMxLjI2NC03NS45MDQsNzAuNTkyYy0zNi42NC02LjE3Ni03MC4xOTItMjUuMjgtOTMuOTY4LTUzLjk4NCAgICAgYy0zLjUzNi00LjI4OC05LjAyNC02LjM4NC0xNC41Ni01LjY2NGMtNS41MDQsMC43NjgtMTAuMjA4LDQuMzM2LTEyLjQzMiw5LjQyNGMtMS4wMjQsMi4zMzYtOS45NTIsMjQuMzA0LTkuOTUyLDc4LjY0ICAgICBjMCw0Ny4wNTYsMzcuMTM2LDgxLjYzMiw2Mi42MDgsOTkuODI0Yy0xNy40MjQsNy45Mi0zNy41MDQsMTAuODMyLTU2LjU3Niw4LjcyYy03LjQ1Ni0wLjgtMTQuNDMyLDMuNTg0LTE2Ljg5NiwxMC42MDggICAgIGMtMi40NjQsNy4wNCwwLjI1NiwxNC44NDgsNi41NiwxOC44MzJjMzAuMDgsMTguOTc2LDY0Ljg0OCwyOS4wMDgsMTAwLjU2LDI5LjAwOGMxMTQuNjg4LDAsMTg0LjA5Ni05MC4wOTYsMTg2LjY3Mi0xNzguOTI4ICAgICBjMy4yOTYtNC43ODQsOS41ODQtMTQuMDk2LDIwLjIwOC0zMC40MzJjNC4yNTYtNi41NzYsNy44MjQtMjAuNzUyLDkuNTY4LTI4LjYwOEM0MTEuNTY4LDEzNi44MzIsNDA5LjEyLDEzMC4zODQsNDAzLjk4NCwxMjYuNjR6ICAgICAgTTM1MS41MzYsMTg3LjUzNmMtMS45NjgsMi43Mi0zLjA0LDYuMDE2LTMuMDQsOS4zNzZjMCw2My4xNTItNDguMDE2LDE1Mi4wOTYtMTU0Ljc1MiwxNTIuMDk2ICAgICBjLTkuNjQ4LDAtMTkuMjE2LTAuODgtMjguNTkyLTIuNjA4YzEyLjUxMi00LjczNiwyNC4zMzYtMTEuMzQ0LDM1LjItMTkuNzEyYzQuMzUyLTMuMzQ0LDYuNjcyLTguNzIsNi4xNi0xNC4xNzYgICAgIGMtMC41MTItNS40NTYtMy43OTItMTAuMjg4LTguNzA0LTEyLjc2OGMtMC42ODgtMC4zNTItNjguMzItMzUuOTItNjguMzItODUuNzEyYzAtMTYuNjg4LDAuODk2LTI5LjgwOCwyLjA4LTM5Ljc5MiAgICAgYzMxLjQwOCwyNy4wNCw3MS4zNzYsNDMuMjE2LDExMy40NCw0NS4yOTZjMC4zMiwwLjAxNiwwLjY1NiwwLjAzMiwwLjk2LDAuMDE2YzkuMzEyLTAuMjcyLDE2LjE2LTcuMTA0LDE2LjE2LTE2ICAgICBjMC0yLjIwOC0wLjQ0OC00LjMwNC0xLjI2NC02LjIyNGMtMC40LTIuNC0wLjYwOC00LjgxNi0wLjYwOC03LjIzMmMwLTIzLjc2LDE5Ljc0NC00My4wODgsNDQuMDMyLTQzLjA4OCAgICAgYzEyLjE5MiwwLDIzLjkyLDQuOTkyLDMyLjE5MiwxMy42OGMzLjc3NiwzLjkzNiw5LjI5Niw1LjcxMiwxNC42MjQsNC42NzJjMy42MzItMC42ODgsNy44MjQtMS4yMzIsMTIuMjI0LTEuODA4ICAgICBjMS41NjgtMC4yMDgsMy4xNTItMC40MTYsNC43NjgtMC42NEMzNTYuMDgsMTgxLjIxNiwzNTEuNzQ0LDE4Ny4yNDgsMzUxLjUzNiwxODcuNTM2eiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiI+PC9wYXRoPgoJCTwvZz4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+" />        
+              <p class="footer__div__item__contenido">@estudiopariscp</p>
+            </div>
+          </div>
+    
+          <div class="footer__div__contacto"> <!--Section footer Contacto-->
+            <div class="footer__div__item">
+              <p class="footer__div__item__contenido">Escribinos </p>
+              <p class="footer__div__item__contenido">estudioparis@gmail.com</p>
+            </div>
+            <div class="footer__div__item">
+              <p class="footer__div__item__contenido">Llamanos</p>
+              <p class="footer__div__item__contenido">+54 11 4545-6676</p>
+            </div>
+            <div class="footer__div__item">
+              <p class="footer__div__item__contenido">Visitanos</p>
+              <p class="footer__div__item__contenido">Viamonte 655, Capital Federal, Buenos Aires, Argentina</p>
+              <iframe class="footer__div__item__contenido__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1723109825634!2d-58.378366385195484!3d-34.59980406479713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacbeb7105f5%3A0x8fa111542b054591!2sViamonte%20655%2C%20C1053ABM%20CABA!5e0!3m2!1ses-419!2sar!4v1618891644468!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+          
+          <div class="footer__div__arriba"> <!--Section footer Volver al principio--> 
+            <a href="contacto.html"><img width="30px" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEgMSkiPgoJPGc+CgkJPHBhdGggZD0iTTQyOS43NDksMTk3Ljk1OWMtMC4wMDgtMC4xMjYtMC4wMTktMC4yNTItMC4wMjctMC4zNzhjLTAuNTg4LTguOTE3LTMuOTU1LTE2Ljg4MS05LjIyMy0yMy4wNzYgICAgYy03LjUyNS05LjQ3MS0xNy43MDItMTQuMjI0LTI5LjA3NC0xNC4yMjRjLTguNTY1LDAtMTYuMTA2LDIuMDQyLTIyLjE5NSw1LjY3Yy0zLjgwNS0xNy40NTItMTkuOC0zMC40MTYtMzguMzkyLTMwLjQxNiAgICBjLTguNTM3LDAtMTYuNDc1LDIuOTczLTIyLjgzNiw3Ljk3N2MtNS4zODMtMTQuNjc1LTE5LjQxNi0yNS4wNDMtMzYuMDQ0LTI1LjA0M2MtNy45MTgsMC0xNS4yNDUsMi4zNTUtMjEuMzMzLDYuNDAzVjQxLjY2NyAgICBDMjUwLjYyNSwyMS4xODcsMjM4LjY3OC0xLDIxMS4zNzItMWMtMjYuNDUzLDAtMzguNCwyMS4zMzMtMzguNCw0Mi42Njd2MTgwLjkwN2MtNi44MjctMTUuMzYtMTcuMDY3LTMwLjcyLTI3LjMwNy00MC45NiAgICBjLTEzLjY1My0xMy42NTMtNDAuOTYtMTQuNTA3LTU2LjMyLTEuNzA3Yy00LjI2Nyw0LjI2Ny0xOC43NzMsMTkuNjI3LDAuODUzLDQ2LjkzM2MxNy45MiwyNS42LDMyLjQyNyw4MS45MiwzMi40MjcsMTE0LjM0NyAgICBjMCw2Ny40MTMsNDQuMzczLDk4LjEzMyw1OS43MzMsMTA2LjY2N3YyOS44NjdjMCwxNy45MiwxNC41MDcsMzMuMjgsMzMuMjgsMzMuMjhoMTU0LjQ1M2MxNy45MiwwLDMzLjI4LTE1LjM2LDM0LjEzMy0zNC4xMzMgICAgdi0zMC43MmMyNS42LTM0LjEzMywyNS42LTM4LjQsMjUuNi0xMDUuODEzVjI1NXYtNTQuNjEzQzQyOS44MjUsMTk5LjU2OSw0MjkuNzk1LDE5OC43NjIsNDI5Ljc0OSwxOTcuOTU5eiBNMzcwLjA5MiwyNTAuNzMzICAgIHYtNTUuNDY3YzAtMTIuOCwxMS45NDctMTcuMDY3LDIxLjMzMy0xNy4wNjdjMC4zODksMCwwLjc3NCwwLjAxOSwxLjE1OCwwLjA0YzEwLjQ4MywwLjY3NiwxOS4xODQsMTAuNDM1LDIwLjE0NSwyMS44MjcgICAgYzAuMDE1LDAuMzg2LDAuMDMsMC43NzIsMC4wMywxLjE3M1YyNTVjMCwxMi44LTExLjA5MywxNy4wNjctMjEuMzMzLDE3LjA2N2MtOS4zODcsMC0yMS4zMzMtNC4yNjctMjEuMzMzLTE3LjA2N1YyNTAuNzMzeiAgICAgTTMzMC44MzgsMTUyLjZjMTEuOTQ3LDAsMjIuMTg3LDkuMzg3LDIyLjE4NywyMS4zMzN2MTkuNjI3djEuNzA3djUzLjc2YzAsMC42My0wLjk0LDEyLjQzNC04LjY1NCwxOC41NiAgICBjLTAuOTQ2LDAuNzAzLTEuOTQ5LDEuMzM4LTMuMDAyLDEuODg5Yy0yLjIxNywxLjA3OC00Ljg0MiwxLjczOC03Ljk3LDEuNzM4Yy01LjQ5LDAtOS45MTQtMC43MTItMTMuMjg1LTIuMzUyICAgIGMtNS43OTgtMy43MzMtOS43NTUtMTAuMzgzLTkuNzU1LTE4LjEyOHYtMC44NTN2LTc1Ljk0N0MzMTAuMzU4LDE2MS45ODcsMzE5Ljc0NSwxNTIuNiwzMzAuODM4LDE1Mi42eiBNMjcxLjk1OCwxMzUuNTMzICAgIGMxMS4wOTMsMCwyMS4zMzMsOS4zODcsMjEuMzMzLDIxLjMzM3YxNy4wNjd2NzUuMDkzdjEuNzA3djAuODUzdjUuOTczYzAsMTEuMDkzLTcuNjgsMjAuNDgtMTcuMDY3LDIyLjE4NyAgICBjLTYuODI3LDEuNzA3LTEyLjgsMC0xNy45Mi00LjI2N2MtMC42MjktMC40MTktMS4yMTgtMC44NzgtMS43Ny0xLjM3MWMtMy42NjktMy44MTYtNS45MS05LjAxOS01LjkxLTE0Ljg0MnYtOTguMTMzdi0wLjg1MyAgICB2LTMuNDEzQzI1MC42MjUsMTQ0LjkyLDI2MC4wMTIsMTM1LjUzMywyNzEuOTU4LDEzNS41MzN6IE0zOTIuNzQ1LDQzNC4yaC0xNC4xMmMtNS4xMiwwLTguNTMzLDMuNDEzLTguNTMzLDguNTMzICAgIHMzLjQxMyw4LjUzMyw4LjUzMyw4LjUzM2g5LjE5bC0wLjY1NiwyNS42YzAsOS4zODctNy42OCwxNy4wNjctMTcuMDY3LDE3LjA2N0gyMTUuNjM4Yy04LjUzMywwLTE2LjIxMy02LjgyNy0xNi4yMTMtMTYuMjEzICAgIHYtMjYuNDUzaDE2LjIxM2M1LjEyLDAsOC41MzMtMy40MTMsOC41MzMtOC41MzNzLTMuNDEzLTguNTMzLTguNTMzLTguNTMzaC0yMy4yNDljLTkuODctNC44MzItNTIuNjk4LTMwLjMxNi01Mi42OTgtOTMuMDEzICAgIGMwLTMxLjU3My0xMy42NTMtOTMuODY3LTM0Ljk4Ny0xMjQuNTg3Yy01Ljk3My03LjY4LTExLjA5My0xNy45Mi0zLjQxMy0yMy44OTNjMy40MTMtMy40MTMsOS4zODctNS4xMiwxNS4zNi01LjEyICAgIGM1Ljk3MywwLDEyLjgsMS43MDcsMTcuMDY3LDUuOTczYzIxLjMzMywyMC40OCw0MC4xMDcsNjUuNzA3LDQwLjEwNyw4Ny4wNGMwLDAuMTQ1LDAuMDEzLDAuMjg0LDAuMDE4LDAuNDI3ICAgIGMtMC4wMDUsMC4xNDMtMC4wMTgsMC4yODEtMC4wMTgsMC40MjdjMCwyMy4wNCwxNC41MDcsNDEuODEzLDMzLjI4LDQxLjgxM2M1LjEyLDAsOC41MzMtMy40MTMsOC41MzMtOC41MzMgICAgcy0zLjQxMy04LjUzMy04LjUzMy04LjUzM2MtOC41MzMsMC0xNi4yMTMtMTEuMDkzLTE2LjIxMy0yNC43NDdjMC0wLjE0NS0wLjAxMy0wLjI4NC0wLjAxOC0wLjQyNyAgICBjMC4wMDUtMC4xNDMsMC4wMTgtMC4yODEsMC4wMTgtMC40MjdWNDEuNjY3YzAtNS45NzMsMC44NTMtMjUuNiwyMC40OC0yNS42YzIwLjQ4LDAsMjEuMzMzLDIxLjMzMywyMS4zMzMsMjUuNnYxMTkuNDY3djAuODUzICAgIHY5Ny4yOGMwLDExLjk0Nyw1LjEyLDIyLjE4NywxNC41MDcsMjkuODY3YzguNjg1LDcuMTA2LDE5LjU2LDkuODE5LDI5LjkyNSw4LjE1OWMxMS40MTItMS42MTUsMjEuNTU1LTguNDYsMjcuNTQ2LTE4LjE0NyAgICBjMy45NTYsMy40NTIsOC4zNjYsNi4wMDYsMTMuMzM4LDcuNjY3YzQuMDE0LDEuNTAyLDguMzM0LDIuMzIxLDEyLjgxOSwyLjMyMWMwLjM2MSwwLDAuNzE4LTAuMDE3LDEuMDc2LTAuMDI3ICAgIGMwLjQ5MiwwLjAxMiwwLjk4MywwLjAyNywxLjQ4NCwwLjAyN2MxMi43NTksMCwyMS40MTctNS40MDQsMjcuMTEtMTIuNTUzYzYuNjkxLDcuOTE0LDE3LjQ5NywxMi41NTMsMzAuOTE2LDEyLjU1MyAgICBjOC4xNjUsMCwxNS40LTEuODU1LDIxLjMzMy01LjIxM3Y1Ni40MTNDNDEyLjc1OCw0MDMuMDI1LDQxMi43NTcsNDA1LjkwMywzOTIuNzQ1LDQzNC4yeiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiI+PC9wYXRoPgoJPC9nPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjwvZz48L3N2Zz4=" /></a>
+          </div>
+    
+        </div>
+    
+      </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    
+  <script src="../js/jquery-3.6.0.min.js"></script>    
+  <script src="../js/main.js"></script>
+
+
+</body>
+</html>
